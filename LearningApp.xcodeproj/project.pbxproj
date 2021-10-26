@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30BDFAC2728099800F0DCEE /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30BDFAB2728099800F0DCEE /* ContentDetailView.swift */; };
+		D30BDFAF27280BAE00F0DCEE /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30BDFAE27280BAE00F0DCEE /* AVKit.framework */; };
+		D30BDFB127280CFB00F0DCEE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30BDFB027280CFB00F0DCEE /* Constants.swift */; };
 		D36C75DF271F250D00E440FE /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C75DE271F250D00E440FE /* LearningApp.swift */; };
 		D36C75E1271F250D00E440FE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C75E0271F250D00E440FE /* HomeView.swift */; };
 		D36C75E3271F251400E440FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36C75E2271F251400E440FE /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D30BDFAB2728099800F0DCEE /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		D30BDFAE27280BAE00F0DCEE /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		D30BDFB027280CFB00F0DCEE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D36C75DB271F250D00E440FE /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36C75DE271F250D00E440FE /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
 		D36C75E0271F250D00E440FE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -40,17 +46,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30BDFAF27280BAE00F0DCEE /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D30BDFAD27280BAE00F0DCEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D30BDFAE27280BAE00F0DCEE /* AVKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D36C75D2271F250D00E440FE = {
 			isa = PBXGroup;
 			children = (
 				D36C75DD271F250D00E440FE /* LearningApp */,
 				D36C75DC271F250D00E440FE /* Products */,
+				D30BDFAD27280BAE00F0DCEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +81,7 @@
 		D36C75DD271F250D00E440FE /* LearningApp */ = {
 			isa = PBXGroup;
 			children = (
+				D30BDFB027280CFB00F0DCEE /* Constants.swift */,
 				D36C75DE271F250D00E440FE /* LearningApp.swift */,
 				D36C75EC271F258100E440FE /* Views */,
 				D36C75EF271F259B00E440FE /* ViewModels */,
@@ -92,6 +109,7 @@
 				D36C75F92720175A00E440FE /* HomeViewRow.swift */,
 				D36C75FB27203E1000E440FE /* ContentView.swift */,
 				D36C75FD2720464A00E440FE /* ContentViewRow.swift */,
+				D30BDFAB2728099800F0DCEE /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,10 +221,12 @@
 				D36C75E1271F250D00E440FE /* HomeView.swift in Sources */,
 				D36C75FA2720175A00E440FE /* HomeViewRow.swift in Sources */,
 				D36C75FC27203E1000E440FE /* ContentView.swift in Sources */,
+				D30BDFAC2728099800F0DCEE /* ContentDetailView.swift in Sources */,
 				D36C75DF271F250D00E440FE /* LearningApp.swift in Sources */,
 				D36C75FE2720464A00E440FE /* ContentViewRow.swift in Sources */,
 				D36C75F2271F25E100E440FE /* ContentModel.swift in Sources */,
 				D36C75F8271F297800E440FE /* Models.swift in Sources */,
+				D30BDFB127280CFB00F0DCEE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
